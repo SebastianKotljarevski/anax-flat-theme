@@ -1,0 +1,86 @@
+/**
+ * Gridbased layout
+ */
+
+@import url(grid.less);
+
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+
+html {
+    overflow-x: hidden;
+}
+
+.row {
+    .row();
+}
+
+
+.main {
+    .column(24);
+}
+
+.flash-wrap img {
+    padding-top: 72px!important;
+    .column(24);
+}
+
+.sidebarright {
+    .column(16);
+    .push(8);
+    margin-left: 0!important;
+}
+
+.sidebarleft {
+    .column(6);
+    .push(2);
+    //position: relative;
+    //top: -645px;
+}
+
+.leftovertext {
+    .column(16);
+    .push(8);
+}
+
+.footer-column {
+    .column(4);
+    .push(3.6);
+}
+
+.site-footer {
+    .column(24);
+    text-align: center;
+}
+
+.main h1 {
+    margin-bottom: 18px;
+}
+
+.site-footer ul li {
+    list-style-type: none;
+}
+
+.rm-desktop li a {
+    margin-top: @magicNumber / 2;
+}
+
+body ul {
+    margin-top: 11px;
+}
+
+html body div div div div div p {
+    margin-top: 0px;
+}
+
+html body div div div div main article {
+    margin-bottom: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-column {
+        .column(6);
+        .push(0);
+    }
+}
